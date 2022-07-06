@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,10 +21,28 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
@@ -31,6 +50,7 @@
     <!--
         Anatomia para tabelas grandes
         Table
+            Caption
             Thead
                 Tr, Td, Th
             Tbody
@@ -39,10 +59,11 @@
                 Tr, Td, Th
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -58,13 +79,81 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 943</td>
             </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraíba></td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraíba></td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraíba></td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>17 264 943</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus qui ratione nesciunt dolores ullam, explicabo provident facilis fugit quaerat. A, ut? Cumque, assumenda nobis non dolor pariatur vero harum eum.</p>
+    
 </body>
 </html>
